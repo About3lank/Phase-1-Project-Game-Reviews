@@ -1,0 +1,44 @@
+{
+    "games": 
+    [
+        { 
+            "name": "Apex Legends", 
+            "release": 2019, 
+            "image": "https://images-na.ssl-images-amazon.com/images/I/91wFo1dJLgS.jpg",
+            "genre": "Battle Royale",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5,
+                    "comment": "I love this game"
+                },
+                {
+                    "id": 2,
+                    "rating": 1, 
+                    "comment": "I hate this game"
+            }
+            ]
+        },
+        { 
+            "name": "The Elder Scrolls V: Skyrim", 
+            "release": 2011, 
+            "image": "https://pbs.twimg.com/media/Ep894ueVgAALlFs.jpg",
+            "genre": "RPG",
+            "reviews": 
+            [
+                {
+                    "id": 3,
+                    "rating": 5, 
+                    "comment": "I love this game so much!"
+                },
+                {
+                    "id": 2,
+                    "rating": 3,
+                    "comment":"I think this game is just OK"
+                }                               
+            ]
+        }
+    ]
+
+}
