@@ -21,15 +21,34 @@
             ]
         },
         { 
-            "name": "Apex Legends", 
-            "release": 2019, 
-            "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1622670/header.jpg?t=1629611561",
+            "name": "The Elder Scrolls V: Skyrim", 
+            "release": 2011, 
+            "image": "https://pbs.twimg.com/media/Ep894ueVgAALlFs.jpg",
+            "genre": "RPG",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5, 
+                    "comment": "I love this game so much!"
+                },
+                {
+                    "id": 2,
+                    "rating": 3,
+                    "comment":"I think this game is just OK"
+                }                               
+            ]
+        },
+        { 
+            "name": "Fortnite Battle Royale", 
+            "release": 2018, 
+            "image": "https://amayei.nyc3.digitaloceanspaces.com/2021/06/fortnite-button-1520296499714.jpg",
             "genre": "Battle Royale",
             "reviews": 
             [
                 {
                     "id": 1,
-                    "rating": 5,
+                    "rating": 4,
                     "comment": "I love this game"
                 },
                 {
@@ -40,14 +59,52 @@
             ]
         },
         { 
-            "name": "The Elder Scrolls V: Skyrim", 
-            "release": 2011, 
-            "image": "https://pbs.twimg.com/media/Ep894ueVgAALlFs.jpg",
-            "genre": "RPG",
+            "name": "Rocket League", 
+            "release": 2015, 
+            "image": "https://activeplayer.io/wp-content/uploads/2020/11/Rocket-League-live-player-count.jpg",
+            "genre": "Sports",
             "reviews": 
             [
                 {
-                    "id": 3,
+                    "id": 1,
+                    "rating": 5, 
+                    "comment": "I love this game so much!"
+                },
+                {
+                    "id": 2,
+                    "rating": 3,
+                    "comment":"I think this game is just OK"
+                }                               
+            ]
+        },
+        { 
+            "name": "Minecraft", 
+            "release": 2011, 
+            "image": "https://image.api.playstation.com/vulcan/img/cfn/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.png",
+            "genre": "Sandbox",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 4,
+                    "comment": "I love this game"
+                },
+                {
+                    "id": 2,
+                    "rating": 1, 
+                    "comment": "I hate this game"
+            }
+            ]
+        },
+        { 
+            "name": "Cuphead", 
+            "release": 2017, 
+            "image": "https://image.api.playstation.com/vulcan/img/cfn/11307fllh6D-IvbpCa18N0vRggVeRYWA06paTNCj3DENJMScAzW2f3ry4IwFcXBAt9kWXdZGpGoOGjxJ_e9MdordMVAosNhZ.png",
+            "genre": "Run and Gun",
+            "reviews": 
+            [
+                {
+                    "id": 1,
                     "rating": 5, 
                     "comment": "I love this game so much!"
                 },
