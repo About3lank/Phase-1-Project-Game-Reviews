@@ -21,6 +21,25 @@
             ]
         },
         { 
+            "name": "Apex Legends", 
+            "release": 2019, 
+            "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1622670/header.jpg?t=1629611561",
+            "genre": "Battle Royale",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5,
+                    "comment": "I love this game"
+                },
+                {
+                    "id": 2,
+                    "rating": 1, 
+                    "comment": "I hate this game"
+            }
+            ]
+        },
+        { 
             "name": "The Elder Scrolls V: Skyrim", 
             "release": 2011, 
             "image": "https://pbs.twimg.com/media/Ep894ueVgAALlFs.jpg",

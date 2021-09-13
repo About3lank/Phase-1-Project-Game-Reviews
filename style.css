@@ -1,0 +1,33 @@
+/* .game-box {
+    width: 30%;
+    height: 30%;
+    background-color: gray;
+
+
+}
+
+.game-image {
+    width: 90%;
+    height: auto;
+    display: inline-flex;
+    margin: 0 auto
+
+}
+
+#games-section {
+    width: 1000px;
+    height: 1000px;
+}
+
+#games-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+} */
+
+
+.game-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
