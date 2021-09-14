@@ -4,7 +4,7 @@
         { 
             "name": "Apex Legends", 
             "release": 2019, 
-            "image": "https://images-na.ssl-images-amazon.com/images/I/91wFo1dJLgS.jpg",
+            "image": "https://cdn.hmv.com/r/w-640/hmv/files/44/4442a711-117f-4f86-ac7b-86115d972141.jpg",
             "genre": "Battle Royale",
             "reviews": 
             [
@@ -23,7 +23,7 @@
         { 
             "name": "The Elder Scrolls V: Skyrim", 
             "release": 2011, 
-            "image": "https://pbs.twimg.com/media/Ep894ueVgAALlFs.jpg",
+            "image": "https://assets-prd.ignimgs.com/2021/08/19/elder-scrolls-skyrim-button-2017-1629409446732.jpg",
             "genre": "RPG",
             "reviews": 
             [
@@ -42,7 +42,7 @@
         { 
             "name": "Fortnite Battle Royale", 
             "release": 2018, 
-            "image": "https://amayei.nyc3.digitaloceanspaces.com/2021/06/fortnite-button-1520296499714.jpg",
+            "image": "https://image.api.playstation.com/vulcan/img/rnd/202106/0806/7KJILbdp9AEmmrELwJCMJqc2.png",
             "genre": "Battle Royale",
             "reviews": 
             [
@@ -61,7 +61,7 @@
         { 
             "name": "Rocket League", 
             "release": 2015, 
-            "image": "https://activeplayer.io/wp-content/uploads/2020/11/Rocket-League-live-player-count.jpg",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/2623/cf7Ot0VeGobVulMq9OCZk88p.png",
             "genre": "Sports",
             "reviews": 
             [
@@ -80,7 +80,7 @@
         { 
             "name": "Minecraft", 
             "release": 2011, 
-            "image": "https://image.api.playstation.com/vulcan/img/cfn/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.png",
+            "image": "https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,g=0.5x0.5,f=auto/12a0ed7c6bc09b73d6558c6f69ed7f5f.png",
             "genre": "Sandbox",
             "reviews": 
             [
@@ -100,7 +100,234 @@
             "name": "Cuphead", 
             "release": 2017, 
             "image": "https://image.api.playstation.com/vulcan/img/cfn/11307fllh6D-IvbpCa18N0vRggVeRYWA06paTNCj3DENJMScAzW2f3ry4IwFcXBAt9kWXdZGpGoOGjxJ_e9MdordMVAosNhZ.png",
-            "genre": "Run and Gun",
+            "genre": "Run & Gun",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5, 
+                    "comment": "I love this game so much!"
+                },
+                {
+                    "id": 2,
+                    "rating": 3,
+                    "comment":"I think this game is just OK"
+                }                               
+            ]
+        },
+        { 
+            "name": "Overwatch", 
+            "release": 2016, 
+            "image": "https://www.teahub.io/photos/full/181-1816989_overwatch-image-overwatch-standard-edition.jpg",
+            "genre": "MOBA",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5,
+                    "comment": "I love this game"
+                },
+                {
+                    "id": 2,
+                    "rating": 1, 
+                    "comment": "I hate this game"
+            }
+            ]
+        },
+        { 
+            "name": "The Witcher 3: Wild Hunt", 
+            "release": 2015, 
+            "image": "https://image.api.playstation.com/cdn/HP4497/CUSA01490_00/qiMTmGrZfSPfLDbfeLvBUXwEfpcSNQgi.png?w=440",
+            "genre": "RPG",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5, 
+                    "comment": "I love this game so much!"
+                },
+                {
+                    "id": 2,
+                    "rating": 3,
+                    "comment":"I think this game is just OK"
+                }                               
+            ]
+        },
+        { 
+            "name": "God of War", 
+            "release": 2018, 
+            "image": "https://images-na.ssl-images-amazon.com/images/I/81N3xkq5Y9L.jpg",
+            "genre": "RPG",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 4,
+                    "comment": "I love this game"
+                },
+                {
+                    "id": 2,
+                    "rating": 1, 
+                    "comment": "I hate this game"
+            }
+            ]
+        },
+        { 
+            "name": "Grand Theft Auto V", 
+            "release": 2013, 
+            "image": "https://img.g2a.com/1080x1080/1x1x0/grand-theft-auto-v-premium-online-edition-rockstar-key-global/5cefd93246177c6a7f52a443",
+            "genre": "Action-Adventure",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5, 
+                    "comment": "I love this game so much!"
+                },
+                {
+                    "id": 2,
+                    "rating": 3,
+                    "comment":"I think this game is just OK"
+                }                               
+            ]
+        },
+        { 
+            "name": "The Legend of Zelda: Breath of the Wild", 
+            "release": 2017, 
+            "image": "https://assets1.ignimgs.com/2019/06/04/legend-of-zelda-breath-of-the-wild---button-1559683061451.jpg",
+            "genre": "Action-Adventure",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 4,
+                    "comment": "I love this game"
+                },
+                {
+                    "id": 2,
+                    "rating": 1, 
+                    "comment": "I hate this game"
+            }
+            ]
+        },
+        { 
+            "name": "Stardew Valley", 
+            "release": 2017, 
+            "image": "https://image.api.playstation.com/cdn/UP2456/CUSA06840_00/0WuZecPtRr7aEsQPv2nJqiPa2ZvDOpYm.png",
+            "genre": "RPG",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5, 
+                    "comment": "I love this game so much!"
+                },
+                {
+                    "id": 2,
+                    "rating": 3,
+                    "comment":"I think this game is just OK"
+                }                               
+            ]
+        },
+        { 
+            "name": "League of Legends", 
+            "release": 2009, 
+            "image": "https://image.uniqlo.com/UQ/ST3/eu/imagesother/2021/ut/games/league/pc-ut-league-of-legends-hero.jpg",
+            "genre": "MOBA",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5,
+                    "comment": "I love this game"
+                },
+                {
+                    "id": 2,
+                    "rating": 1, 
+                    "comment": "I hate this game"
+            }
+            ]
+        },
+        { 
+            "name": "Pokemon Go", 
+            "release": 2016, 
+            "image": "https://otakukart.com/wp-content/uploads/2021/04/pokemon-go-cover-1200x900.jpg",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5, 
+                    "comment": "I love this game so much!"
+                },
+                {
+                    "id": 2,
+                    "rating": 3,
+                    "comment":"I think this game is just OK"
+                }                               
+            ]
+        },
+        { 
+            "name": "Red Dead Redemption 2", 
+            "release": 2018, 
+            "image": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
+            "genre": "Action-Adventure",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 4,
+                    "comment": "I love this game"
+                },
+                {
+                    "id": 2,
+                    "rating": 1, 
+                    "comment": "I hate this game"
+            }
+            ]
+        },
+        { 
+            "name": "Portal 2", 
+            "release": 2015, 
+            "image": "https://macgamesbox.com/wp-content/uploads/cover.portal-2.1024x1024.2014-04-24.1116.jpg",
+            "genre": "Puzzle",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 5, 
+                    "comment": "I love this game so much!"
+                },
+                {
+                    "id": 2,
+                    "rating": 3,
+                    "comment":"I think this game is just OK"
+                }                               
+            ]
+        },
+        { 
+            "name": "Assassin's Creed: Origins", 
+            "release": 2017, 
+            "image": "https://image.api.playstation.com/cdn/UP0001/CUSA05855_00/yYiGRi9oya2bnKV9QnZ65ghdgBTVWQfI.png",
+            "genre": "Action-Adventure",
+            "reviews": 
+            [
+                {
+                    "id": 1,
+                    "rating": 4,
+                    "comment": "I love this game"
+                },
+                {
+                    "id": 2,
+                    "rating": 1, 
+                    "comment": "I hate this game"
+            }
+            ]
+        },
+        { 
+            "name": "Fallout 4", 
+            "release": 2015, 
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/2500/4GZyUQ1bHTjICP6GCRG7f65n.png",
+            "genre": "RPG",
             "reviews": 
             [
                 {

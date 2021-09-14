@@ -1,4 +1,4 @@
-/* .game-box {
+.game-box {
     width: 30%;
     height: 30%;
     background-color: gray;
@@ -23,7 +23,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-} */
+}
 
 
 .game-image {
