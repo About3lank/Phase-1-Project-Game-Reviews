@@ -66,30 +66,30 @@ table, th, td {
     background-color: rgba(0, 0, 0, 0.8); 
 }
 
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    height: 70%;
-  }
-  
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  #game-trailer {
-      width: 90%;
-      height: 98%;
-  }
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+height: 70%;
+}
+
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+#game-trailer {
+    width: 90%;
+    height: 98%;
+}

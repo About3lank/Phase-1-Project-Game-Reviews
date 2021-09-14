@@ -200,284 +200,237 @@
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 1,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 1
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 1,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 1   
         },
         {
             "rating": 2,
             "comment": "This is a bad game",
-            "gameId": 2,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 2    
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 2,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 2    
         },
         {
             "rating": 3,
             "comment": "This game is okay",
-            "gameId": 3,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 3      
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 3,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 3      
         },
         {
             "rating": 2,
             "comment": "This is a bad game",
-            "gameId": 4,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 4
         },
         {
             "rating": 4,
             "comment": "This is a good game",
-            "gameId": 4,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 4
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 5,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 5
         },
         {
             "rating": 4,
             "comment": "This is a good game",
-            "gameId": 5,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 5
         },
         {
             "rating": 4,
             "comment": "This is a good game",
-            "gameId": 6,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 6
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 6,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 6
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 7,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 7
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 7,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 7
         },
         {
             "rating": 2,
             "comment": "This is a bad game",
-            "gameId": 8,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 8
         },
         {
             "rating": 3,
             "comment": "This game is okay",
-            "gameId": 8,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 8
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 9,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 9
         },
         {
             "rating": 4,
             "comment": "This is a good game",
-            "gameId": 9,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 9
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 10,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 10
         },
         {
             "rating": 3,
             "comment": "This game is okay",
-            "gameId": 10,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 10
         },
         {
             "rating": 2,
             "comment": "This is a bad game",
-            "gameId": 11,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 11
         },
         {
             "rating": 4,
             "comment": "This is a good game",
-            "gameId": 11,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 11
         },
         {
             "rating": 3,
             "comment": "This game is okay",
-            "gameId": 12,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 12
         },
         {
             "rating": 2,
             "comment": "This is a bad game",
-            "gameId": 12,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 12
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 13,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 13
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 13,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 13
         },
         {
             "rating": 2,
             "comment": "This is a bad game",
-            "gameId": 14,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 14
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 14,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 14
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 15,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 15
         },
         {
             "rating": 2,
             "comment": "This is a bad game",
-            "gameId": 15,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 15
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 16,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 16
         },
         {
             "rating": 4,
             "comment": "This is a good game",
-            "gameId": 16,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 16
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 17,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 17
         },
         {
             "rating": 3,
             "comment": "This game is okay",
-            "gameId": 17,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 17
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 18,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 18
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 18,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 18
         },
         {
             "rating": 3,
             "comment": "This game is okay",
-            "gameId": 19,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 19
         },
         {
             "rating": 4,
             "comment": "This is a good game",
-            "gameId": 19,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 19
         },
         {
             "rating": 2,
             "comment": "This is a bad game",
-            "gameId": 20,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 20
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 20,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 20
         },
         {
             "rating": 4,
             "comment": "This is a good game",
-            "gameId": 21,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 21
         },
         {
             "rating": 5,
             "comment": "This is a really good game!",
-            "gameId": 21,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 21
         },
         {
             "rating": 3,
             "comment": "This game is okay",
-            "gameId": 22,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 22
         },
         {
             "rating": 4,
             "comment": "This is a good game",
-            "gameId": 22,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 22
         },
         {
             "rating": 3,
             "comment": "This game is okay",
-            "gameId": 23,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 23
         },
         {
             "rating": 2,
             "comment": "This is a bad game",
-            "gameId": 23,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 23
         },
         {
             "rating": 1,
             "comment": "This is a really bad game!",
-            "gameId": 24,
-            "trailer": "./trailers/1.mp4"      
+            "gameId": 24
         },
         {
             "rating": 3,
