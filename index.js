@@ -22,14 +22,7 @@ function renderGameRow(e) {
 
     e.reviews.forEach( function(r) {
         const review = mkElement('p')
-        review.innerText = ""
-        for (let i=0; i<5; i++){
-            if (i <= r.rating){
-                review.innerText += `★`;
-            } else {
-                review.innerText += `☆`;
-            }
-        }
+        review.innerText = renderStars(r.rating)
         review.innerText += ` - ${r.comment}`
         reviewDetails.appendChild(review)
     })
@@ -67,18 +60,22 @@ function calculateRating(e) {
 
     const avgRating = ratingTally / numberOfReviews
 
+    return renderStars(avgRating)
+
+
+}
+
+function renderStars(rating) {
+
     let ratingStars = ""
-        for (let i=0; i<5; i++){
-            if (i <= avgRating){
-                ratingStars += `★`;
-            } else {
-                ratingStars += `☆`;
-            }
+    for (let i=0; i<5; i++){
+        if (i <= rating){
+            ratingStars += `★`;
+        } else {
+            ratingStars += `☆`;
         }
-
+    }
     return ratingStars
-
-
 }
 
 const mkElement = (element) => document.createElement(element)
