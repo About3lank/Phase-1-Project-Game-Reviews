@@ -12,6 +12,8 @@ function renderGameRow(e) {
     const gameTable = document.getElementById('game-table')
 
     const gameRow = mkElement('tr')
+    gameRow.id = `gameID-${e.id}`
+
 
     const reviewDetails = mkElement('details')
     const commentTitle = mkElement('summary')
@@ -32,20 +34,27 @@ function renderGameRow(e) {
         reviewDetails.appendChild(review)
     })
 
+    const thumbnailCell = mkElement('td')
     const nameCell = mkElement('td')
     const releaseCell = mkElement('td')
     const genreCell = mkElement('td')
     const ratingCell = mkElement('td')
     const reviewCell = mkElement('td')
 
+    const thumbnailImg = mkElement('img')
+    thumbnailImg.src = e.image
+    thumbnailImg.alt = e.name
+    thumbnailImg.className = "thumbnail"
+    thumbnailCell.appendChild(thumbnailImg)
+
     nameCell.innerText = e.name
     releaseCell.innerText = e.release
     genreCell.innerText = e.genre 
-    ratingCell.innerText = `(${calculateRating(e)}*)`
+    ratingCell.innerText = calculateRating(e)
     reviewCell.append(reviewDetails)
 
 
-    gameRow.append(nameCell, releaseCell, genreCell, ratingCell, reviewCell)
+    gameRow.append(thumbnailCell, nameCell, releaseCell, genreCell, ratingCell, reviewCell)
     gameTable.appendChild(gameRow)
 }
 
@@ -56,7 +65,20 @@ function calculateRating(e) {
         ratingTally += e.reviews[i].rating
     }
 
-    return ( ratingTally / numberOfReviews )
+    const avgRating = ratingTally / numberOfReviews
+
+    let ratingStars = ""
+        for (let i=0; i<5; i++){
+            if (i <= avgRating){
+                ratingStars += `★`;
+            } else {
+                ratingStars += `☆`;
+            }
+        }
+
+    return ratingStars
+
+
 }
 
 const mkElement = (element) => document.createElement(element)
