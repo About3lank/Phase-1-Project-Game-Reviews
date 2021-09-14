@@ -51,3 +51,64 @@ table, th, td {
     border-collapse: collapse
 
 }
+
+/* .star-rating div {
+    display: block;
+    padding: 0 0 5px 5px;
+    clear: both;
+
+} */
+
+#leave-review {
+    border: solid black 1px;
+    margin-bottom: 20px;
+}
+
+
+.star-rating span {
+    display: block;
+    padding-left: 20px;
+    cursor: inherit;
+
+}
+
+.star-rating label {
+    font-size: rem-calc(16);
+
+}
+
+.star-rating input {
+    float: left;
+    width: 20px;
+    margin-left: -20px;
+    -webkit-appearance: radio;
+
+}
+
+form {
+    padding: 20px;
+    flex: auto;
+}
+
+.form-section {
+    padding: 10px 0px;
+    width: 300px;
+    margin: 0px
+}
+
+select, .radio-buttons, #comment-field {
+    margin: 4px 0px;
+}
+
+#comment-field {
+    width: 250px;
+    height: 180px;
+}
+
+#submit-button {
+    width: 250px;
+}
+
+/* .form-column {
+    display:block
+} */

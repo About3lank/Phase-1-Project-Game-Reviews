@@ -1,3 +1,19 @@
+function populateGameDropdown() {
+    const menu = document.getElementById('games-dropdown')
+    fetch(BASE_URL)
+        .then(res => res.json())
+        .then(function(data) {
+            data.forEach(e => {
+                console.log(e.id)
+                const option = mkElement('option')
+                option.value=`gameID-${e.id}`
+                option.innerText = e.name
+                menu.appendChild(option)
+            })
+        })
+}
+
+
 function displayGames() {
     fetch(BASE_URL)
         .then(res => res.json())
@@ -22,8 +38,8 @@ function renderGameRow(e) {
 
     e.reviews.forEach( function(r) {
         const review = mkElement('p')
-        review.innerText = renderStars(r.rating)
-        review.innerText += ` - ${r.comment}`
+        review.innerText = 
+        review.innerText += `${renderStars(r.rating)} ${r.comment}`
         reviewDetails.appendChild(review)
     })
 
@@ -77,7 +93,12 @@ function renderStars(rating) {
 
 const mkElement = (element) => document.createElement(element)
 
-function init () {
+function renderReviewForm() {
+    populateGameDropdown() 
+}
+
+function init() {
+    renderReviewForm()
     displayGames()
 }
 
