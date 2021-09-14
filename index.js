@@ -43,7 +43,7 @@ function renderGameRow(e) {
     nameCell.innerText = e.name
     releaseCell.innerText = e.release
     genreCell.innerText = e.genre 
-    ratingCell.innerText = calculateRating(e)
+    ratingCell.innerText = renderStars(calculateRating(e))
     reviewCell.append(reviewDetails)
 
 
@@ -57,12 +57,8 @@ function calculateRating(e) {
     for (let i = 0; i < numberOfReviews; i++) {
         ratingTally += e.reviews[i].rating
     }
-
     const avgRating = ratingTally / numberOfReviews
-
-    return renderStars(avgRating)
-
-
+    return avgRating
 }
 
 function renderStars(rating) {
