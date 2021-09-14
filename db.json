@@ -2,460 +2,415 @@
     "games": 
     [
         { 
+            "id": 1,
             "name": "Apex Legends", 
             "release": 2019, 
             "image": "https://cdn.hmv.com/r/w-640/hmv/files/44/4442a711-117f-4f86-ac7b-86115d972141.jpg",
-            "genre": "Battle Royale",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5,
-                    "comment": "I love this game"
-                },
-                {
-                    "id": 2,
-                    "rating": 1, 
-                    "comment": "I hate this game"
-            }
-            ]
+            "genre": "Battle Royale"
         },
         { 
+            "id": 2,
             "name": "The Elder Scrolls V: Skyrim", 
             "release": 2011, 
             "image": "https://assets-prd.ignimgs.com/2021/08/19/elder-scrolls-skyrim-button-2017-1629409446732.jpg",
-            "genre": "RPG",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "RPG"
         },
         { 
+            "id": 3, 
             "name": "Fortnite Battle Royale", 
             "release": 2018, 
             "image": "https://image.api.playstation.com/vulcan/img/rnd/202106/0806/7KJILbdp9AEmmrELwJCMJqc2.png",
-            "genre": "Battle Royale",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 4,
-                    "comment": "I love this game"
-                },
-                {
-                    "id": 2,
-                    "rating": 1, 
-                    "comment": "I hate this game"
-            }
-            ]
+            "genre": "Battle Royale"
         },
         { 
+            "id": 4, 
             "name": "Rocket League", 
             "release": 2015, 
             "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/2623/cf7Ot0VeGobVulMq9OCZk88p.png",
-            "genre": "Sports",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "Sports"
         },
         { 
+            "id": 5, 
             "name": "Minecraft", 
             "release": 2011, 
             "image": "https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,g=0.5x0.5,f=auto/12a0ed7c6bc09b73d6558c6f69ed7f5f.png",
-            "genre": "Sandbox",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 4,
-                    "comment": "I love this game"
-                },
-                {
-                    "id": 2,
-                    "rating": 1, 
-                    "comment": "I hate this game"
-            }
-            ]
+            "genre": "Sandbox"
         },
         { 
+            "id": 6, 
             "name": "Cuphead", 
             "release": 2017, 
             "image": "https://image.api.playstation.com/vulcan/img/cfn/11307fllh6D-IvbpCa18N0vRggVeRYWA06paTNCj3DENJMScAzW2f3ry4IwFcXBAt9kWXdZGpGoOGjxJ_e9MdordMVAosNhZ.png",
-            "genre": "Run & Gun",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "Run & Gun"
         },
         { 
+            "id": 7, 
             "name": "Overwatch", 
             "release": 2016, 
             "image": "https://www.teahub.io/photos/full/181-1816989_overwatch-image-overwatch-standard-edition.jpg",
-            "genre": "FPS",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5,
-                    "comment": "I love this game"
-                },
-                {
-                    "id": 2,
-                    "rating": 1, 
-                    "comment": "I hate this game"
-            }
-            ]
+            "genre": "FPS"
         },
         { 
+            "id": 8, 
             "name": "The Witcher 3: Wild Hunt", 
             "release": 2015, 
             "image": "https://image.api.playstation.com/cdn/HP4497/CUSA01490_00/qiMTmGrZfSPfLDbfeLvBUXwEfpcSNQgi.png?w=440",
-            "genre": "RPG",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "RPG"
         },
         { 
+            "id": 9, 
             "name": "God of War", 
             "release": 2018, 
             "image": "https://images-na.ssl-images-amazon.com/images/I/81N3xkq5Y9L.jpg",
-            "genre": "RPG",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 4,
-                    "comment": "I love this game"
-                },
-                {
-                    "id": 2,
-                    "rating": 1, 
-                    "comment": "I hate this game"
-            }
-            ]
+            "genre": "RPG"
         },
         { 
+            "id": 10, 
             "name": "Grand Theft Auto V", 
             "release": 2013, 
             "image": "https://img.g2a.com/1080x1080/1x1x0/grand-theft-auto-v-premium-online-edition-rockstar-key-global/5cefd93246177c6a7f52a443",
-            "genre": "Action-Adventure",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "Action-Adventure"
         },
         { 
+            "id": 11, 
             "name": "The Legend of Zelda: Breath of the Wild", 
             "release": 2017, 
             "image": "https://assets1.ignimgs.com/2019/06/04/legend-of-zelda-breath-of-the-wild---button-1559683061451.jpg",
-            "genre": "Action-Adventure",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 4,
-                    "comment": "I love this game"
-                },
-                {
-                    "id": 2,
-                    "rating": 1, 
-                    "comment": "I hate this game"
-            }
-            ]
+            "genre": "Action-Adventure"
         },
         { 
+            "id": 12, 
             "name": "Stardew Valley", 
             "release": 2017, 
             "image": "https://image.api.playstation.com/cdn/UP2456/CUSA06840_00/0WuZecPtRr7aEsQPv2nJqiPa2ZvDOpYm.png",
-            "genre": "RPG",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "RPG"
         },
         { 
+            "id": 13, 
             "name": "League of Legends", 
             "release": 2009, 
             "image": "https://image.uniqlo.com/UQ/ST3/eu/imagesother/2021/ut/games/league/pc-ut-league-of-legends-hero.jpg",
-            "genre": "MOBA",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5,
-                    "comment": "I love this game"
-                },
-                {
-                    "id": 2,
-                    "rating": 1, 
-                    "comment": "I hate this game"
-            }
-            ]
+            "genre": "MOBA"
         },
         { 
+            "id": 14, 
             "name": "Pokemon Go", 
             "release": 2016, 
             "image": "https://otakukart.com/wp-content/uploads/2021/04/pokemon-go-cover-1200x900.jpg",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "Augmented Reality"
         },
         { 
+            "id": 15, 
             "name": "Red Dead Redemption 2", 
             "release": 2018, 
             "image": "https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
-            "genre": "Action-Adventure",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 4,
-                    "comment": "I love this game"
-                },
-                {
-                    "id": 2,
-                    "rating": 1, 
-                    "comment": "I hate this game"
-            }
-            ]
+            "genre": "Action-Adventure"
         },
         { 
+            "id": 16, 
             "name": "Portal 2", 
             "release": 2015, 
             "image": "https://macgamesbox.com/wp-content/uploads/cover.portal-2.1024x1024.2014-04-24.1116.jpg",
-            "genre": "Puzzle",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "Puzzle"
         },
         { 
+            "id": 17, 
             "name": "Assassin's Creed: Origins", 
             "release": 2017, 
             "image": "https://image.api.playstation.com/cdn/UP0001/CUSA05855_00/yYiGRi9oya2bnKV9QnZ65ghdgBTVWQfI.png",
-            "genre": "Action-Adventure",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 4,
-                    "comment": "I love this game"
-                },
-                {
-                    "id": 2,
-                    "rating": 1, 
-                    "comment": "I hate this game"
-            }
-            ]
+            "genre": "Action-Adventure"
         },
         { 
+            "id": 18, 
             "name": "Fallout 4", 
             "release": 2015, 
             "image": "https://image.api.playstation.com/vulcan/ap/rnd/202009/2500/4GZyUQ1bHTjICP6GCRG7f65n.png",
-            "genre": "RPG",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "RPG"
         },
         { 
+            "id": 19, 
             "name": "Bloodborne", 
             "release": 2015, 
             "image": "https://image.api.playstation.com/cdn/UP9000/CUSA00900_00/b5uuNMulpxnRpWZDG7lPexwMY7i9Pns7.png",
-            "genre": "RPG",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "RPG"
         },
         { 
+            "id": 20, 
             "name": "Destiny", 
             "release": 2014, 
             "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781608874200/the-art-of-destiny-9781608874200_hr.jpg",
-            "genre": "RPG",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "RPG"
         },
         { 
+            "id": 21, 
             "name": "Marvel's Spider-Man", 
             "release": 2018, 
             "image": "https://image.api.playstation.com/vulcan/ap/rnd/202011/0402/C784xeOFo2wViCf4m5bxgoeH.png",
-            "genre": "Action-Adventure",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "Action-Adventure"
         },
         { 
+            "id": 22, 
             "name": "Super Mario Odyssey", 
             "release": 2017, 
             "image": "http://www.mc-mmg-homebase.com/sitemedia/images/smo_main_visual.jpg",
-            "genre": "Action-Adventure",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "Action-Adventure"
         },
         { 
+            "id": 23, 
             "name": "Persona 5 Royal", 
             "release": 2019, 
             "image": "https://assets1.ignimgs.com/2020/02/14/persona-5-royal---button-fin-1581716582492.jpg",
-            "genre": "RPG",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "RPG"
         },
         { 
+            "id": 24,
             "name": "Mortal Kombat 11", 
             "release": 2019, 
             "image": "https://www.mobygames.com/images/covers/l/554030-mortal-kombat-11-nintendo-switch-front-cover.jpg",
-            "genre": "Fighting",
-            "reviews": 
-            [
-                {
-                    "id": 1,
-                    "rating": 5, 
-                    "comment": "I love this game so much!"
-                },
-                {
-                    "id": 2,
-                    "rating": 3,
-                    "comment":"I think this game is just OK"
-                }                               
-            ]
+            "genre": "Fighting"
+        }
+    ],
+
+    "reviews": [
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 1
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 1
+        },
+        {
+            "rating": 2,
+            "comment": "This is a bad game",
+            "gameId": 2
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 2
+        },
+        {
+            "rating": 3,
+            "comment": "This game is okay",
+            "gameId": 3
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 3
+        },
+        {
+            "rating": 2,
+            "comment": "This is a bad game",
+            "gameId": 4
+        },
+        {
+            "rating": 4,
+            "comment": "This is a good game",
+            "gameId": 4
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 5
+        },
+        {
+            "rating": 4,
+            "comment": "This is a good game",
+            "gameId": 5
+        },
+        {
+            "rating": 4,
+            "comment": "This is a good game",
+            "gameId": 6
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 6
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 7
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 7
+        },
+        {
+            "rating": 2,
+            "comment": "This is a bad game",
+            "gameId": 8
+        },
+        {
+            "rating": 3,
+            "comment": "This game is okay",
+            "gameId": 8
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 9
+        },
+        {
+            "rating": 4,
+            "comment": "This is a good game",
+            "gameId": 9
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 10
+        },
+        {
+            "rating": 3,
+            "comment": "This game is okay",
+            "gameId": 10
+        },
+        {
+            "rating": 2,
+            "comment": "This is a bad game",
+            "gameId": 11
+        },
+        {
+            "rating": 4,
+            "comment": "This is a good game",
+            "gameId": 11
+        },
+        {
+            "rating": 3,
+            "comment": "This game is okay",
+            "gameId": 12
+        },
+        {
+            "rating": 2,
+            "comment": "This is a bad game",
+            "gameId": 12
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 13
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 13
+        },
+        {
+            "rating": 2,
+            "comment": "This is a bad game",
+            "gameId": 14
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 14
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 15
+        },
+        {
+            "rating": 2,
+            "comment": "This is a bad game",
+            "gameId": 15
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 16
+        },
+        {
+            "rating": 4,
+            "comment": "This is a good game",
+            "gameId": 16
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 17
+        },
+        {
+            "rating": 3,
+            "comment": "This game is okay",
+            "gameId": 17
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 18
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 18
+        },
+        {
+            "rating": 3,
+            "comment": "This game is okay",
+            "gameId": 19
+        },
+        {
+            "rating": 4,
+            "comment": "This is a good game",
+            "gameId": 19
+        },
+        {
+            "rating": 2,
+            "comment": "This is a bad game",
+            "gameId": 20
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 20
+        },
+        {
+            "rating": 4,
+            "comment": "This is a good game",
+            "gameId": 21
+        },
+        {
+            "rating": 5,
+            "comment": "This is a really good game!",
+            "gameId": 21
+        },
+        {
+            "rating": 3,
+            "comment": "This game is okay",
+            "gameId": 22
+        },
+        {
+            "rating": 4,
+            "comment": "This is a good game",
+            "gameId": 22
+        },
+        {
+            "rating": 3,
+            "comment": "This game is okay",
+            "gameId": 23
+        },
+        {
+            "rating": 2,
+            "comment": "This is a bad game",
+            "gameId": 23
+        },
+        {
+            "rating": 1,
+            "comment": "This is a really bad game!",
+            "gameId": 24
+        },
+        {
+            "rating": 3,
+            "comment": "This game is okay",
+            "gameId": 24
         }
     ]
-
 }
