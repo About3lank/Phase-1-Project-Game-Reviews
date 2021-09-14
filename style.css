@@ -31,6 +31,12 @@
     height: 100%;
     object-fit: cover;
 } */
+body {
+    max-width: 1067px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 90px;
+}
 
 .thumbnail {
     max-width: 80px;
@@ -52,7 +58,6 @@ table, th, td {
 
 }
 
-<<<<<<< HEAD
 .modal {
     display: none; 
     position: fixed;
@@ -94,7 +99,6 @@ cursor: pointer;
     width: 90%;
     height: 98%;
 }
-=======
 /* .star-rating div {
     display: block;
     padding: 0 0 5px 5px;
@@ -155,4 +159,3 @@ select, .radio-buttons, #comment-field {
 /* .form-column {
     display:block
 } */
->>>>>>> f553b8ae1838e62a67a016d8cda9eca5a5d84f7e
