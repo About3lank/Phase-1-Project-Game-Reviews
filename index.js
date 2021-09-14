@@ -19,11 +19,14 @@ function renderGameRow(e) {
     commentTitle.innerText = "Reviews"
     reviewDetails.appendChild(commentTitle)
 
-    e.reviews.forEach( function(r) {
-        const review = mkElement('p')
-        review.innerText = `(${r.rating}*) - ${r.comment}`
-        reviewDetails.appendChild(review)
-    })
+    const review = mkElement('p')
+    review.innerText = "(RATING HERE) - (COMMENT HERE)"
+    reviewDetails.appendChild(review)
+    // e.reviews.forEach( function(r) {
+    //     const review = mkElement('p')
+    //     review.innerText = `(${r.rating}*) - ${r.comment}`
+    //     reviewDetails.appendChild(review)
+    // })
 
     const nameCell = mkElement('td')
     const releaseCell = mkElement('td')
@@ -33,8 +36,11 @@ function renderGameRow(e) {
 
     nameCell.innerText = e.name
     releaseCell.innerText = e.release
-    genreCell.innerText = e.genre 
-    ratingCell.innerText = `(${calculateRating(e)}*)`
+    genreCell.innerText = e.genre
+
+    // ratingCell.innerText = `(${calculateRating(e)}*)`
+    ratingCell.innerText = "RATING HERE"
+
     reviewCell.append(reviewDetails)
     
 
