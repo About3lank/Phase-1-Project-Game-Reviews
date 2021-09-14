@@ -4,28 +4,58 @@ function displayGames() {
         .then(function(data) {
             data.forEach(element => {
                 console.log()
-                renderGameCard(element)
+                renderGameRow(element)
             });
         })
 }
 
-function renderGameCard(element) {
-    const gallery = document.getElementById('games-gallery')
-    const box = document.createElement('figure')
-    box.className = 'game-box'
+function renderGameRow(e) {
+    const gameTable = document.getElementById('game-table')
 
-    const image = document.createElement('img')
-    image.src = element.image
-    image.alt = element.name
-    image.className = "game-image"
+    const gameRow = mkElement('tr')
 
-    box.appendChild(image)
-    gallery.appendChild(box)
+    const reviewDetails = mkElement('details')
+    const commentTitle = mkElement('summary')
+    commentTitle.innerText = "Reviews"
+    reviewDetails.appendChild(commentTitle)
+
+    e.reviews.forEach( function(r) {
+        const review = mkElement('p')
+        review.innerText = `(${r.rating}*) - ${r.comment}`
+        reviewDetails.appendChild(review)
+    })
+
+    const nameCell = mkElement('td')
+    const releaseCell = mkElement('td')
+    const genreCell = mkElement('td')
+    const ratingCell = mkElement('td')
+    const reviewCell = mkElement('td')
+
+    nameCell.innerText = e.name
+    releaseCell.innerText = e.release
+    genreCell.innerText = e.genre 
+    ratingCell.innerText = `(${calculateRating(e)}*)`
+    reviewCell.append(reviewDetails)
+    
+
+    // console.log(ratingCell.innerText)
+
+    gameRow.append(nameCell, releaseCell, genreCell, ratingCell, reviewCell)
+    gameTable.appendChild(gameRow)
 }
 
+function calculateRating(e) {
+    const numberOfReviews = e.reviews.length
+    let ratingTally = 0
 
+    for (let i = 0; i < numberOfReviews; i++) {
+        ratingTally += e.reviews[i].rating
+    }
 
+    return ( ratingTally / numberOfReviews )
+}
 
+const mkElement = (element) => document.createElement(element)
 
 function init () {
     displayGames()
