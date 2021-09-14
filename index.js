@@ -3,7 +3,6 @@ function displayGames() {
         .then(res => res.json())
         .then(function(data) {
             data.forEach(element => {
-                console.log()
                 renderGameRow(element)
             });
         })
@@ -19,14 +18,11 @@ function renderGameRow(e) {
     commentTitle.innerText = "Reviews"
     reviewDetails.appendChild(commentTitle)
 
-    const review = mkElement('p')
-    review.innerText = "(RATING HERE) - (COMMENT HERE)"
-    reviewDetails.appendChild(review)
-    // e.reviews.forEach( function(r) {
-    //     const review = mkElement('p')
-    //     review.innerText = `(${r.rating}*) - ${r.comment}`
-    //     reviewDetails.appendChild(review)
-    // })
+    e.reviews.forEach( function(r) {
+        const review = mkElement('p')
+        review.innerText = `(${r.rating}*) - ${r.comment}`
+        reviewDetails.appendChild(review)
+    })
 
     const nameCell = mkElement('td')
     const releaseCell = mkElement('td')
@@ -36,15 +32,10 @@ function renderGameRow(e) {
 
     nameCell.innerText = e.name
     releaseCell.innerText = e.release
-    genreCell.innerText = e.genre
-
-    // ratingCell.innerText = `(${calculateRating(e)}*)`
-    ratingCell.innerText = "RATING HERE"
-
+    genreCell.innerText = e.genre 
+    ratingCell.innerText = `(${calculateRating(e)}*)`
     reviewCell.append(reviewDetails)
-    
 
-    // console.log(ratingCell.innerText)
 
     gameRow.append(nameCell, releaseCell, genreCell, ratingCell, reviewCell)
     gameTable.appendChild(gameRow)
@@ -67,6 +58,5 @@ function init () {
     displayGames()
 }
 
-
-BASE_URL = "http://localhost:3000/games"
+BASE_URL = "http://localhost:3000/games?_embed=reviews"
 init()
