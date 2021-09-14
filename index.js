@@ -42,8 +42,9 @@ function renderGameRow(e) {
 
     nameCell.innerText = e.name
     releaseCell.innerText = e.release
-    genreCell.innerText = e.genre 
-    ratingCell.innerText = renderStars(calculateRating(e))
+    genreCell.innerText = e.genre
+    const ratingValue = calculateRating(e)
+    ratingCell.innerText = `${renderStars(ratingValue)} (${ratingValue})`
     reviewCell.append(reviewDetails)
 
 
@@ -62,10 +63,10 @@ function calculateRating(e) {
 }
 
 function renderStars(rating) {
-
+    rating = Math.floor(rating)
     let ratingStars = ""
     for (let i=0; i<5; i++){
-        if (i <= rating){
+        if (i < rating){
             ratingStars += `★`;
         } else {
             ratingStars += `☆`;
