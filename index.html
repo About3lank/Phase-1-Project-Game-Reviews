@@ -5,9 +5,16 @@
         <script src="index.js" defer></script>
         <link rel="stylesheet" href="style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <h1>Video Game Reviews</h1>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <iframe id="game-trailer" allowfullscreen></iframe>
+            </div>
+        </div>
         <p>A list of game reviews</p>
         <div id="game-section">
             <table id="game-table">

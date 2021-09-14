@@ -20,7 +20,7 @@ function renderGameRow(e) {
     commentTitle.innerText = "Reviews"
     reviewDetails.appendChild(commentTitle)
 
-    e.reviews.forEach( function(r) {
+    e.reviews.forEach(function(r) {
         const review = mkElement('p')
         review.innerText = renderStars(r.rating)
         review.innerText += ` - ${r.comment}`
@@ -38,6 +38,23 @@ function renderGameRow(e) {
     thumbnailImg.src = e.image
     thumbnailImg.alt = e.name
     thumbnailImg.className = "thumbnail"
+    thumbnailImg.addEventListener('click', function() {
+        const modal = document.getElementById("myModal");
+        const span = document.getElementsByClassName("close")[0];
+        const gameTrailer = document.getElementById("game-trailer");
+        gameTrailer.src = e.trailer;
+        gameTrailer.type= "YouTube video player";
+        gameTrailer.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        modal.style.display = "block";
+        span.addEventListener('click', function() {
+            modal.style.display = "none";
+        })
+        window.addEventListener('click', function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+        })
+    })
     thumbnailCell.appendChild(thumbnailImg)
 
     nameCell.innerText = e.name
@@ -51,6 +68,7 @@ function renderGameRow(e) {
     gameRow.append(thumbnailCell, nameCell, releaseCell, genreCell, ratingCell, reviewCell)
     gameTable.appendChild(gameRow)
 }
+
 
 function calculateRating(e) {
     const numberOfReviews = e.reviews.length
