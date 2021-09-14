@@ -1,4 +1,4 @@
-.game-box {
+/* .game-box {
     width: 30%;
     height: 30%;
     background-color: gray;
@@ -24,7 +24,7 @@
     height: 100%;
     display: flex;
 }
-
+ */
 
 /* .game-image {
     width: 100%;
@@ -32,6 +32,22 @@
     object-fit: cover;
 } */
 
-td {
-    vertical-align: top;
+.thumbnail {
+    max-width: 80px;
+    max-height: 80px;
+
+}
+
+#game-table {
+    table-layout: auto;
+    border: 1px solid black;
+    border-collapse: collapse
+
+}
+
+table, th, td {
+    vertical-align: center;
+    border: 1px solid black;
+    border-collapse: collapse
+
 }
