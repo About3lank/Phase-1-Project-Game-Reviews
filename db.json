@@ -481,24 +481,6 @@
       "rating": 3,
       "comment": "This game is okay",
       "gameId": 24
-    },
-    {
-      "rating": 5,
-      "comment": "23213",
-      "gameId": 1,
-      "id": 49
-    },
-    {
-      "rating": 1,
-      "comment": "awdaw",
-      "gameId": 1,
-      "id": 50
-    },
-    {
-      "rating": 2,
-      "comment": "adawd",
-      "gameId": 1,
-      "id": 51
     }
   ]
 }

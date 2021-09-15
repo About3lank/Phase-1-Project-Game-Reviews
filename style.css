@@ -41,7 +41,7 @@ body {
 .thumbnail {
     max-width: 80px;
     max-height: 80px;
-
+    vertical-align: middle;
 }
 
 #game-table {
@@ -154,6 +154,13 @@ select, .radio-buttons, #comment-field {
 
 #submit-button {
     width: 250px;
+}
+
+.delete-bttn {
+    color:rgb(255, 100, 100);
+    background-color: rgb(255, 212, 212);
+    border: none;
+    border-radius: 6px;
 }
 
 /* .form-column {
