@@ -13,9 +13,22 @@ function populateGameDropdown() {
         })
 }
 
+function addFormSubmitHandler() {
+    const form = document.getElementById('leave-review')
+    form.addEventListener('submit', function() {
+        event.preventDefault()
+        submitForm(event)
+    })
+}
+
+function submitForm(event) {
+    // 
+}
+
 
 function renderReviewForm() {
     populateGameDropdown() 
+    addFormSubmitHandler()
 }
 
 function init() {
