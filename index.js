@@ -40,7 +40,7 @@ function renderGameRow(e) {
     e.reviews.forEach(function(r) {
         // render out each review's stars and comment
         const review = mkElement('p')
-        review.innerText = 
+        review.id =r.id;
         review.innerText += `${renderStars(r.rating)} ${r.comment}`
 
         // add delete button to each review
@@ -49,10 +49,18 @@ function renderGameRow(e) {
         deleteBttn.type = 'button'
         deleteBttn.innerText = 'X'
         deleteBttn.addEventListener('click', function(event) {
-            console.log('clicked')
+            review.remove();
+            
+            const removeReview = {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+
+            fetch(BASE_URL+"/reviews/"+review.id, removeReview)
         })
         review.appendChild(deleteBttn)
-
         reviewDetails.appendChild(review)
     })
 
@@ -104,10 +112,6 @@ function renderGameRow(e) {
     gameTable.appendChild(gameRow)
 
     // populate review cell
-    populateRatingReviews(e, ratingCell, reviewCell, reviewDetails)
-}
-
-function populateRatingReviews(e, ratingCell, reviewCell, reviewDetails) {
     const ratingValue = calculateRating(e)
     const ratingStars = mkElement('p')
     ratingStars.innerText = renderStars(ratingValue)
@@ -145,16 +149,9 @@ function renderStars(rating) {
 function addFormSubmitHandler() {
     const form = document.getElementById('leave-review')
     form.addEventListener('submit', function(e) {
-        event.preventDefault()
+        e.preventDefault()
         submitForm(e)
-
-        const rowToUpdate = `gameID-${e.id}`
-        const ratingCell = document.querySelector(`#${rowToUpdate} > td.rating-cell`)
-        const reviewCell = document.querySelector(`#${rowToUpdate} > td.review-cell`)
-        const reviewDetails = document.querySelector(`#${rowToUpdate} > td.review-cell > details`)
-
-        populateRatingReviews(event, ratingCell, reviewCell, reviewDetails)
-    })
+        })
 }
 
 function submitForm(event) {
@@ -178,7 +175,16 @@ function submitForm(event) {
 
     fetch(BASE_URL+"/reviews", configObj)
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => updateScore(data))
+}
+
+function updateScore(data){
+    const rowToUpdate = data.gameId;
+    const scoreUpdate = document.querySelector(`#gameID-${rowToUpdate} > td.rating-cell > p:nth-child(2)`)
+    const numberOfReviews = document.querySelectorAll(`#gameID-${rowToUpdate} > td.rating-cell > p:nth-child(2)`).length
+    let newRating = (scoreUpdate + data.rating) / numberOfReviews
+    newRating = (Math.floor(newRating * 100)) /100
+    scoreUpdate.text = newRating;
 }
 
 const mkElement = (element) => document.createElement(element)
