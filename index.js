@@ -1,6 +1,6 @@
 function populateGameDropdown() {
     const menu = document.getElementById('games-dropdown')
-    fetch(BASE_URL)
+    fetch(BASE_URL+"/games?_embed=reviews")
         .then(res => res.json())
         .then(function(data) {
             data.forEach(e => {
@@ -15,7 +15,7 @@ function populateGameDropdown() {
 
 
 function displayGames() {
-    fetch(BASE_URL)
+    fetch(BASE_URL+"/games?_embed=reviews")
         .then(res => res.json())
         .then(function(data) {
             data.forEach(element => {
@@ -30,19 +30,33 @@ function renderGameRow(e) {
     const gameRow = mkElement('tr')
     gameRow.id = `gameID-${e.id}`
 
-
     const reviewDetails = mkElement('details')
+    reviewDetails.className = 'review-details'
+
     const commentTitle = mkElement('summary')
     commentTitle.innerText = "Reviews"
     reviewDetails.appendChild(commentTitle)
 
     e.reviews.forEach(function(r) {
+        // render out each review's stars and comment
         const review = mkElement('p')
         review.innerText = 
         review.innerText += `${renderStars(r.rating)} ${r.comment}`
+
+        // add delete button to each review
+        const deleteBttn = mkElement('button')
+        deleteBttn.className = 'delete-bttn'
+        deleteBttn.type = 'button'
+        deleteBttn.innerText = 'X'
+        deleteBttn.addEventListener('click', function(event) {
+            console.log('clicked')
+        })
+        review.appendChild(deleteBttn)
+
         reviewDetails.appendChild(review)
     })
 
+    // create each cell in the row
     const thumbnailCell = mkElement('td')
     const nameCell = mkElement('td')
     const releaseCell = mkElement('td')
@@ -50,10 +64,16 @@ function renderGameRow(e) {
     const ratingCell = mkElement('td')
     const reviewCell = mkElement('td')
 
+    ratingCell.className = 'rating-cell'
+    reviewCell.className = 'review-cell'
+
+    // create thumbnail image
     const thumbnailImg = mkElement('img')
     thumbnailImg.src = e.image
     thumbnailImg.alt = e.name
     thumbnailImg.className = "thumbnail"
+
+    // add pop-up link to thumbnail for game trailer
     thumbnailImg.addEventListener('click', function() {
         const modal = document.getElementById("myModal");
         const span = document.getElementsByClassName("close")[0];
@@ -75,16 +95,26 @@ function renderGameRow(e) {
     })
     thumbnailCell.appendChild(thumbnailImg)
 
+    // populate name, release, and genre cells with values
     nameCell.innerText = e.name
     releaseCell.innerText = e.release
     genreCell.innerText = e.genre
-    const ratingValue = calculateRating(e)
-    ratingCell.innerText = `${renderStars(ratingValue)} (${ratingValue})`
-    reviewCell.append(reviewDetails)
-
 
     gameRow.append(thumbnailCell, nameCell, releaseCell, genreCell, ratingCell, reviewCell)
     gameTable.appendChild(gameRow)
+
+    // populate review cell
+    populateRatingReviews(e, ratingCell, reviewCell, reviewDetails)
+}
+
+function populateRatingReviews(e, ratingCell, reviewCell, reviewDetails) {
+    const ratingValue = calculateRating(e)
+    const ratingStars = mkElement('p')
+    ratingStars.innerText = renderStars(ratingValue)
+    const ratingScore = mkElement('p')
+    ratingScore.innerText = `(${ratingValue})`
+    ratingCell.append(ratingStars, ratingScore)
+    reviewCell.append(reviewDetails)
 }
 
 
@@ -94,7 +124,8 @@ function calculateRating(e) {
     for (let i = 0; i < numberOfReviews; i++) {
         ratingTally += e.reviews[i].rating
     }
-    const avgRating = ratingTally / numberOfReviews
+    let avgRating = ratingTally / numberOfReviews
+    avgRating = (Math.floor(avgRating * 100)) /100
     return avgRating
 }
 
@@ -113,9 +144,16 @@ function renderStars(rating) {
 
 function addFormSubmitHandler() {
     const form = document.getElementById('leave-review')
-    form.addEventListener('submit', function(event) {
+    form.addEventListener('submit', function(e) {
         event.preventDefault()
-        submitForm(event)
+        submitForm(e)
+
+        const rowToUpdate = `gameID-${e.id}`
+        const ratingCell = document.querySelector(`#${rowToUpdate} > td.rating-cell`)
+        const reviewCell = document.querySelector(`#${rowToUpdate} > td.review-cell`)
+        const reviewDetails = document.querySelector(`#${rowToUpdate} > td.review-cell > details`)
+
+        populateRatingReviews(event, ratingCell, reviewCell, reviewDetails)
     })
 }
 
@@ -127,9 +165,9 @@ function submitForm(event) {
     const comment = document.querySelector('textarea[name="comment"]').value;
 
     const newReview = {
-        rating: rating,
+        rating: +rating,
         comment: comment,
-        gameId: gameID
+        gameId: +gameID
     }
 
     const configObj = {
@@ -138,9 +176,7 @@ function submitForm(event) {
         body: JSON.stringify(newReview)
     }
 
-    const REVIEWS_URL = "http://localhost:3000/reviews"
-
-    fetch(REVIEWS_URL, configObj)
+    fetch(BASE_URL+"/reviews", configObj)
         .then(res => res.json())
         .then(data => console.log(data))
 }
@@ -158,7 +194,7 @@ function init() {
 }
 
 
-const REVIEWS_URL = "http://localhost:3000/reviews"
-const BASE_URL = "http://localhost:3000/games?_embed=reviews"
+// const REVIEWS_URL = "http://localhost:3000"
+const BASE_URL = "http://localhost:3000"
 
 init()
