@@ -15,7 +15,7 @@ function populateGameDropdown() {
 
 function addFormSubmitHandler() {
     const form = document.getElementById('leave-review')
-    form.addEventListener('submit', function() {
+    form.addEventListener('submit', function(event) {
         event.preventDefault()
         submitForm(event)
     })
