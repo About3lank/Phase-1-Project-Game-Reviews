@@ -3,6 +3,7 @@ body {
     padding-bottom: 90px;
     font-family: 'Open Sans', sans-serif;
     display: inline;
+    background-image: url("background.jpg");
 }
 
 .thumbnail {
@@ -15,18 +16,9 @@ h1 + p,
 h1 {
  text-align: center;
  color:rgb(0, 0, 0);
- background-color: rgb(255, 252, 246);
  max-width: 500px;
  padding: 10px;
  margin:auto;
-}
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
 }
 
 #game-table {
