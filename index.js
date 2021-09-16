@@ -147,9 +147,15 @@ function addModalEvent(e) {
 function renderReview(r) {
     // render each review's stars and comment
     const review = mkElement('p')
+    review.innerText = `${renderStars(r.rating)}`
+    const reviewStars = mkElement("span");
+    review.append(reviewStars);
+    reviewStars.className = "review-stars"
+    reviewStars.innerText = ` ${r.comment} `;
     review.id =r.id;
     review.value = r.rating
-    review.innerText += `${renderStars(r.rating)} ${r.comment} `
+
+    
 
     // add delete button to each review
     const deleteBttn = mkElement('button')
