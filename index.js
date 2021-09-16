@@ -160,7 +160,7 @@ function renderReview(r) {
     deleteBttn.addEventListener('click', function() {
 
         // define functionality for delete button click event
-        review.remove();
+        review.remove()
 
         // assemble configuration object for fetch call
         const removeReview = {
@@ -180,14 +180,19 @@ function renderReview(r) {
         const reviewsObj = localData[gameID- 1]
         // iterate over game's reviews to delete the proper review in localData for optimistic render
         for (let i=0; i<reviewsObj.reviews.length; i++) {
-
-            if (reviewsObj.reviews[i].id == review.id) {
+            if(reviewsObj.reviews[i].id === undefined){
+                reviewsObj.reviews[i].id = review.id;
+                reviewsObj.reviews.splice(i, 1)
+                console.log(`deleted ${reviewsObj.reviews[i]}`)
+            }
+            else if (reviewsObj.reviews[i].id == review.id) {
                 reviewsObj.reviews.splice(i, 1)
                 console.log(`deleted ${reviewsObj.reviews[i]}`)
             } else {
                 console.log(`passed by ${reviewsObj.reviews[i]} and did not delete it`)
             }
         }
+        
         
         // recalculate the average rating and replace that value in realtime
         populateRatingCell(reviewsObj, ratingCell)
@@ -286,6 +291,7 @@ function addFormSubmitHandler() {
         // optimistically update cell containing average rating of game
         const ratingCell = document.querySelector(`#gameID-${gameID} > td.rating-cell`)
         populateRatingCell(reviewsObj, ratingCell)
+        form.reset()
         })
 }
 
