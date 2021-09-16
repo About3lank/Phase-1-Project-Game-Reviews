@@ -1,27 +1,7 @@
-function populateGameDropdown() {
+function displayGames() {
     // access dropdown menu (select #games-dropdown element)
     const menu = document.getElementById('games-dropdown')
-
-    // GET list of games from JSON database server to populate the review form's game menu
-    fetch(BASE_URL+"/games?_embed=reviews")
-        .then(res => res.json())
-        .then(function(data) {
-            
-            data.forEach(e => {
-                //create menu option element for each game
-                const option = mkElement('option')
-
-                // interpolate id values (to avoid overlap) and label options with plain text
-                option.value=`gameID-${e.id}`
-                option.innerText = e.name
-
-                // append options to the menu
-                menu.appendChild(option)
-            })
-        })
-}
-
-function displayGames() {
+    
     // GET data from JSON database server with fetch request
     fetch(BASE_URL+"/games?_embed=reviews")
         .then(res => res.json())
@@ -33,6 +13,16 @@ function displayGames() {
 
                 // render data so that each game occupies a row in the table #game-table element
                 renderGameRow(data[i])
+
+                //create form menu option element for each game
+                const option = mkElement('option')
+
+                // interpolate menu option id values (to avoid overlap) and label options with plain text
+                option.value=`gameID-${data[i].id}`
+                option.innerText = data[i].name
+
+                // append options to the menu
+                menu.appendChild(option)
             }
         })
 }
@@ -304,16 +294,10 @@ function addFormSubmitHandler() {
 const mkElement = (element) => document.createElement(element)
 
 
-function renderReviewForm() {
-    // create a form to leave reviews and define submit even functionality
-    populateGameDropdown() 
-    addFormSubmitHandler()
-}
-
 function init() {
     // initiates when program is loaded (defers until DOM is loaded via "defer" tag in index.html)
-    renderReviewForm()
     displayGames()
+    addFormSubmitHandler()
 }
 
 // define base URL to access JSON database
