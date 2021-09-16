@@ -3,6 +3,8 @@ body {
     padding-bottom: 90px;
     font-family: 'Open Sans', sans-serif;
     display: inline;
+    background-image: url("controller_tile.jpg");
+    background-attachment: fixed;
 }
 
 .thumbnail {
@@ -21,8 +23,9 @@ h1 {
 }
 
 #title-section {
+    border: 1px solid black;
     border-radius: 8px;
-    background-color: rgb(255, 252, 246);
+    background-color: rgb(255, 255, 255);
     max-width: 500px;
     margin:auto;
 }
