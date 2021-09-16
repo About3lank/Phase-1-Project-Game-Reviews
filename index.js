@@ -157,7 +157,7 @@ function renderReview(r) {
     deleteBttn.type = 'button'
     deleteBttn.innerText = 'X'
     // add event listener to delete button
-    deleteBttn.addEventListener('click', function(event) {
+    deleteBttn.addEventListener('click', function() {
 
         // define functionality for delete button click event
         review.remove();
@@ -178,9 +178,9 @@ function renderReview(r) {
         const ratingCell = document.querySelector(`#gameID-${r.gameId} > td.rating-cell`)
         const gameID = r.gameId
         const reviewsObj = localData[gameID- 1]
-
         // iterate over game's reviews to delete the proper review in localData for optimistic render
         for (let i=0; i<reviewsObj.reviews.length; i++) {
+
             if (reviewsObj.reviews[i].id == review.id) {
                 reviewsObj.reviews.splice(i, 1)
                 console.log(`deleted ${reviewsObj.reviews[i]}`)
@@ -203,7 +203,7 @@ function renderReview(r) {
 
 function calculateRating(e) {
     // total number of ratings as denominator
-    const numberOfReviews = e.reviews.length
+    let numberOfReviews = e.reviews.length
 
     // iterate over all reviews to find their sum (numerator)
     let ratingTally = 0
@@ -213,7 +213,6 @@ function calculateRating(e) {
 
     // calculate the average review
     let avgRating = ratingTally / numberOfReviews
-
     //round the result to 2 decimal places
     avgRating = (Math.floor(avgRating * 100)) /100
 
@@ -259,7 +258,7 @@ function addFormSubmitHandler() {
         const newReview = {
             rating: +rating,
             comment: comment,
-            gameId: +gameID
+            gameId: +gameID,
         }
 
         // store user input object in local memory for optimistic rendering
@@ -267,31 +266,27 @@ function addFormSubmitHandler() {
         reviewsObj.reviews.push(newReview)
         
         // submit user input object to JSON database server
-        submitForm(newReview)
+        // construct configutation object for POST fetch
+        const configObj = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(newReview)
+        }
 
-        // optimistically render user's review submission
-        const reviewDetails = document.querySelector(`#${gameDropDown} > td.review-cell > details`)
-        const review = renderReview(newReview)
-        reviewDetails.appendChild(review)
-
+        // use fetch to POST information written in the form upon submitting
+        fetch(BASE_URL+"/reviews", configObj)
+            .then(res => res.json())
+            .then(function(data){
+            // optimistically render user's review submission
+            const reviewDetails = document.querySelector(`#${gameDropDown} > td.review-cell > details`)
+            const review = renderReview(data)
+            reviewDetails.appendChild(review)})
+        
+            
         // optimistically update cell containing average rating of game
         const ratingCell = document.querySelector(`#gameID-${gameID} > td.rating-cell`)
         populateRatingCell(reviewsObj, ratingCell)
         })
-}
-
-function submitForm(newReview) {
-    // construct configutation object for POST fetch
-    const configObj = {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(newReview)
-    }
-
-    // use fetch to POST information written in the form upon submitting
-    fetch(BASE_URL+"/reviews", configObj)
-        .then(res => res.json())
-        .then(data => console.log(data))
 }
 
 const mkElement = (element) => document.createElement(element)
